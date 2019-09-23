@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story Teller</title>
+</head>
+<style type="text/css">
+    body {background:black}
+    .left{
+        width:200px;
+        height:450px;
+        background: grey;
+        text-align: center;
+    }
+    .left ul{
+        padding:0;
+        margin:0;
+        margin-top:20px;
+    }
+    .left li{
+        list-style-type: none;
+        line-height: 55px;
+        margin-bottom: 18px;
+        padding-left: 10px;
+        background: darkgrey;
+        border-radius: 3px;
+    }
+    .a{
+        text-decoration: none;
+        font-family: Baghdad,fantasy;
+        color: ghostwhite;
+        font-size: large;
+
+    }
+    .right{
+        width:200px;
+        height:135px;
+        float: right;
+    }
+    .tellin {
+        padding: 30px;
+        background: black;
+        border: 1px solid black;
+        margin: 0 auto;
+        margin-top: 150px;
+        display: table;
+        color: white;
+        font-family: Baghdad, fantasy;
+        font-size: 20px;
+    }
+    .tell{
+        background: cornflowerblue;
+        margin-left: 97px;
+        height: 41px;
+        color:#FFF;
+        font-size: 30px;
+        font-family: "Brush Script MT",fantasy;
+    }
+    .tell1{
+        margin-left: 97px;
+        background: black;
+        font-size: 20px;
+        font-family: "Diwan Kufi",cursive;
+        color: white;
+    }
+    .tellout{
+        padding:0;
+        background:black;
+        border: 1px solid black;
+        margin-left:700px;
+        margin-top: -500px;
+    }
+    .tellout1{
+        font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+        font-size: 30px;
+    }
+    input{
+        width: 350px;
+        height: 35px;
+        border-radius: 7px;
+        margin-bottom: 1em;
+    }
+</style>
+<body>
+<div class="left">
+    <img src="imgs/2.jpg" alt="Moon" width="200">
+    <nav>
+        <ul>
+            <li><a href="imgs/something.html" class="a" target="_self">Story teller</a></li>
+            <li><a href="#" class="a">The past</a></li>
+            <li><a href="#" class="a">The future</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="right">
+    <img src="imgs/3.jpg" alt="Moon" width="200">
+</div>
+<div class="tellin">
+    <form action="/teller/" method="post">
+        <p><label>please..tell me<br><input type="text" class="tell1" name="msg"/></label></p>
+        <p><input type="submit" value="Tell" class="tell"/></p>
+    </form>
+</div>
+<div class="tellout">
+    <form action="/teller/" method="get">
+        <p><label><input type="text" name="teller" class="tellout1" value="I hear:"/></label></p>
+    </form>
+</div>
+</body>
+</html>
