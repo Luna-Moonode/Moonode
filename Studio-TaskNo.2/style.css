@@ -100,9 +100,13 @@
         font-size: large;
     }
     .textb{
+        padding: 8px;
+        border-radius: 12px;
+        text-align: center;
+        display: inline-block;
         text-decoration: none;
         font-family: "Chalkboard SE",fantasy;
-        font-size: 27px;
+        font-size: 23px;
         color: ghostwhite;
 	    background-color:deeppink;
     }
