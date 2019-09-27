@@ -110,3 +110,9 @@
         color: ghostwhite;
 	    background-color:deeppink;
     }
+    .span{
+        border: 10px;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+    }
