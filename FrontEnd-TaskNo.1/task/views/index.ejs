@@ -9,7 +9,8 @@
 
 <body class="body">
   <h1 :class="homeClass" id="h1">Homepage~</h1>
-  <a href="/main"><button class='button'>Hello World!</button></a>
+  <a href="/main"><button :class='buttonClass' id="button" @mouseenter="mouseenter()" @mouseleave="mouseleave()">Hello
+      World!</button></a>
   <script type="text/javascript" src="/javascripts/index.js"></script>
 </body>
 
