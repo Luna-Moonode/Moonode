@@ -1,4 +1,10 @@
-// import { hostname } from "os";
+vm = new Vue({
+    el: h1,
+    data: {
+        homeClass: "home0"
+    }
+});
+
 
 // h1 button
 var button = document.getElementsByTagName('button')[0];
@@ -21,4 +27,13 @@ function move() {
 mark = setInterval(move, 20);
 setTimeout(function () {
     clearInterval(mark);
-}, 700)
+    changeColor();
+}, 600)
+
+function changeColor() {
+    var count = 0;
+    setInterval(function () {
+        vm.homeClass = "home" + (count % 3);
+        count++;
+    }, 800);
+}

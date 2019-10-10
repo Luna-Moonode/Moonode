@@ -4,10 +4,11 @@
 <head>
   <title>Homepage</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body class="body">
-  <h1 class="home">Homepage~</h1>
+  <h1 :class="homeClass" id="h1">Homepage~</h1>
   <a href="/main"><button class='button'>Hello World!</button></a>
   <script type="text/javascript" src="/javascripts/index.js"></script>
 </body>

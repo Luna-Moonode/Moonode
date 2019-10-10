@@ -1,7 +1,7 @@
 .body{
   background-color: black;
 }
-.home{
+.home0{
   position: absolute;
   left: 0;
   top: 30%;
@@ -9,7 +9,24 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
   color: azure;
-
+}
+.home1{
+position: absolute;
+  left: 0;
+  top: 30%;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  color: beige;
+}
+.home2{
+position: absolute;
+  left: 0;
+  top: 30%;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  color: burlywood;
 }
 .button{
   position: absolute;
