@@ -1,0 +1,83 @@
+.body{
+    background-color: black;
+}
+.resume{
+    font-size: 80px;
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+.objective{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: floralwhite;
+}
+.education{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: floralwhite;
+}
+.experience{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: floralwhite;
+}
+.span1{
+    width: 500px;
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+.span2{
+    width: 500px;
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+.span3{
+    width: 500px;
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button1{
+    position: absolute;
+    left: 65%;
+    top: 32%;
+    width: 200px;
+    height:50px ;
+    font-size: 30px;
+    color: black;
+    background-color: honeydew;
+    border-radius: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button2{
+    position: absolute;
+    left: 65%;
+    top: 45%;
+    width: 200px;
+    height:50px ;
+    font-size: 30px;
+    color: black;
+    background-color: honeydew;
+    border-radius: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
