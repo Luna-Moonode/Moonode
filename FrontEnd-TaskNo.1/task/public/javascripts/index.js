@@ -1,10 +1,10 @@
-vm_h1 = new Vue({
+var vm_h1 = new Vue({
     el: '#h1',
     data: {
         homeClass: "home0"
     }
 });
-vm_button = new Vue({
+var vm_button = new Vue({
     el: '#button',
     data: {
         buttonClass: 'button0'
@@ -18,6 +18,8 @@ vm_button = new Vue({
         }
     }
 });
+
+
 function changeColor() {
     var count = 0;
     setInterval(function () {
