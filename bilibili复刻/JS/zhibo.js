@@ -49,7 +49,7 @@ for (let i = 0; i < topli.length; i++) {
 var imgs = document.getElementById("rightScroll"),
     texts = document.getElementById("rightScrollh3").children,
     tiaos = document.getElementById("rightScrollspan").children;
-
+console.log(document.getElementById("rightScrollspan"));
 var imgInterval1,
     scrollInterval1,
     num1 = 1;
