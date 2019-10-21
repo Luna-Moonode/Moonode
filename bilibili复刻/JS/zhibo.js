@@ -49,7 +49,7 @@ for (let i = 0; i < topli.length; i++) {
 var imgs = document.getElementById("rightScroll"),
     texts = document.getElementById("rightScrollh3").children,
     tiaos = document.getElementById("rightScrollspan").children;
-console.log(document.getElementById("rightScrollspan"));
+    
 var imgInterval1,
     scrollInterval1,
     num1 = 1;
@@ -79,7 +79,7 @@ function action1() {
 action1();
 var lock_imgs = 0;
 for (let i = 0; i < tiaos.length; i++) {
-    tiaos[i].addEventListener("click", function () {
+    tiaos[i].addEventListener("mouseenter", function () {
         clearInterval(imgInterval1);
         clearInterval(scrollInterval1);
         if (!lock_imgs) {
@@ -105,8 +105,10 @@ for (let i = 0; i < tiaos.length; i++) {
             // style
             for (let h = 0; h < tiaos.length; h++) {
                 tiaos[h].className = 'inactiveli';
+                texts[h].className = 'h3inactive' /* 我起的什么破名。。*/
             }
             this.className = 'activeli';
+            texts[id].className = 'h3active';
         }
     })
 }

@@ -1,13 +1,45 @@
-#rightNav {
+.staticrightNav {
     width: 50px;
-    height: 642px;
+    height: 542px;
     position: fixed;
     float: right;
     top: 232px;
-    right: 200px;
+    left: 1440px;
     border-radius: 8px;
-    border: 1px solid rgb(180, 176, 176, 0.3);
     white-space: nowrap;
+    border: 1px solid rgb(180, 176, 176, 0.3);
+}
+@keyframes activerightNav {
+    from {top: 232px;}
+    to {top: 130px;}
+}
+@keyframes inactiverightNav {
+    from {top: 130px;}
+    to {top: 232px;}
+}
+.activerightNav {
+    animation: 0.7s activerightNav;
+    width: 50px;
+    height: 542px;
+    position: fixed;
+    top: 130px;
+    float: right;
+    left: 1440px;
+    border-radius: 8px;
+    white-space: nowrap;
+    border: 1px solid rgb(180, 176, 176, 0.3);
+}
+.inactiverightNav {
+    animation: 0.7s inactiverightNav;
+    width: 50px;
+    height: 542px;
+    position: fixed;
+    float: right;
+    top: 232px;
+    left: 1440px;
+    border-radius: 8px;
+    white-space: nowrap;
+    border: 1px solid rgb(180, 176, 176, 0.3);
 }
 #rightNav ul {
     float: right;
@@ -31,4 +63,37 @@
     transition: 0.6s;
     background-color: rgb(87, 216, 255);
     color: whitesmoke;
+}
+
+#rightNav .animation {
+    background-image: url(../imgs/animation.png);
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 540px;
+    left: -14px;
+    cursor: pointer;
+}
+
+@keyframes inactiverightdownload {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes activerightdownload {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#rightNav .inactiverightdownload {
+    animation: 1s inactiverightdownload;
+    position: absolute;
+    top: 520px;
+    left: -110px;
+    opacity: 0;
+}
+#rightNav .activerightdownload {
+    animation: 1s activerightdownload;
+    position: absolute;
+    top: 520px;
+    left: -110px;
+    display: block;
 }

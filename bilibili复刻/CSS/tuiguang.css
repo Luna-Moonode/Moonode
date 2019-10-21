@@ -56,32 +56,37 @@
     border-radius: 6px;
     width: 160px;
     height: 100px;
-    cursor: pointer;
 }
 #tuiguang .ul1 li .time {
     width: 20px;
     height: 20px;
     position: relative;
-    top: -20px;
-    background-color: black;
+    top: 80px;
 }
 #tuiguang .ul1 li h4 {
     font-weight: 100;
     float: left;
     position: relative;
-    top: -20px;
+    top: 80px;
     color: white;
 }
 @keyframes spanemerge {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-#tuiguang .ul1 .inactivespan {
+#tuiguang .ul1 .tuiguang_inactivespan {
     display: none;
 }
-#tuiguang .ul1 .activespan {
+#tuiguang .ul1 .tuiguang_activespan {
+    width: 160px;
+    height: 100px;
+    position: relative;
+    top: -100px;
     display: block;
     animation: 0.6s spanemerge;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 12px;
 }
 /*  */
 #tuiguang .ul2 {
@@ -98,6 +103,14 @@
 #tuiguang .ul2 li h3 {
     font-weight: 100;
     font-size: 8px;
+}
+@keyframes blueh3 {
+    from {color: black;}
+    to {color: #00a1d6}
+}
+#tuiguang .ul2 li .tuiguang_activeh3 {
+    animation: 0.85s blueh3;
+    color: #00a1d6;
 }
 #tuiguang .tuiguangimg {
     position: relative;

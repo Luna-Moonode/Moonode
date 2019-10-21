@@ -44,7 +44,7 @@ for (let h = 0; h < circles.length; h++) {
                 if ((id - num + 1) < 0) {
                     counter -= 10;
                     scroll.style.marginLeft = (parseInt(scroll.style.marginLeft) + 10) + 'px';
-                } else if ((num - id) != 1){
+                } else if ((num - id) != 1) {
                     counter += 10;
                     scroll.style.marginLeft = (parseInt(scroll.style.marginLeft) - 10) + 'px';
                 }
@@ -70,4 +70,31 @@ scroll.onmouseenter = function () {
 }
 scroll.onmouseleave = function () {
     more.className = "more iconfont";
+}
+
+// 蒙版
+var videos_uls = document.getElementsByClassName("videos_ulid");
+for (let j = 0; j < 2; j++) {
+    for (let i = 0; i < videos_uls[j].children.length; i++) {
+        videos_uls[j].children[i].children[0].onmouseenter = function () {
+            videos_uls[j].children[i].children[1].className = "activediv";
+            videos_uls[j].children[i].children[2].className = "inactiveouterh4";
+        }
+        videos_uls[j].children[i].children[1].onmouseleave = function () {
+            videos_uls[j].children[i].children[1].className = null;
+            videos_uls[j].children[i].children[2].className = null;
+        }
+    }
+}
+
+var rightvideos = document.getElementById("rightvideos"),
+    buttons = document.getElementById("videos").getElementsByTagName("button");
+
+rightvideos.onmouseenter = function () {
+    buttons[0].className = "fl activelbtn iconfont";
+    buttons[1].className = "fr activerbtn iconfont";
+}
+rightvideos.onmouseleave = function () {
+    buttons[0].className = "fl lbtn iconfont";
+    buttons[1].className = "fr rbtn iconfont";
 }

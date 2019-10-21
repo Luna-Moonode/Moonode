@@ -14,25 +14,49 @@
     <div id="head">
         <a href="#"><img src="./imgs/top-left.png" class="biliimg"></a>
         <div class="clearfix headNav">
-            <ul class="fl leftNav">
+            <ul class="fl leftNav" id="head_leftul">
                 <li>
                     <a href="#">
                         <span class="iconfont biliTVicon">&#xe75d;</span>
                         <span>主站</span>
                     </a>
                 </li>
-                <li><a href="#">游戏中心</a></li>
-                <li><a href="#">直播</a></li>
+                <li>
+                    <a href="#">游戏中心</a>
+                    <div>
+                        <iframe src="https://www.bilibili.com/page-proxy/game-nav.html" frameborder="0" width="100%"
+                            height="100%"></iframe>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">直播</a>
+                    <div>
+                        <iframe src="https://live.bilibili.com/blackboard/dropdown-menu.html" frameborder="0"
+                            width="100%" height="100%"></iframe>
+                    </div>
+
+                </li>
                 <li><a href="#">会员购</a></li>
-                <li><a href="#">漫画</a></li>
+                <li><a href="#">漫画</a>
+                    <div>
+                        <iframe src="https://manga.bilibili.com/eden/bilibili-nav-panel.html" frameborder="0" width="100%"
+                            height="100%"></iframe>
+                    </div>
+                </li>
                 <li><a href="#">赛事</a></li>
-                <li><a href="#">BW</a></li>
+                <li><a href="#">BW</a>
+                    <div>
+                        <iframe src="https://www.bilibili.com/page-proxy/game-nav.html" frameborder="0" width="100%"
+                            height="100%"></iframe>
+                    </div>
+                </li>
                 <li><a href="#">70年</a></li>
                 <li>
                     <a href="#">
                         <span class="iconfont biliPhoneicon">&#xe628;</span>
                         <span>下载APP</span>
                     </a>
+                    <div style="width:259px;height:174px;background-image: url(./imgs/orcode-frame.png)"><img src="./imgs/qrcode.png" style="width:105px;height:105px;position:absolute;top: 28px;left: 77px;"></div>
                 </li>
             </ul>
             <ul class="fr rightNav">
@@ -120,20 +144,116 @@
                 <div class="more iconfont" id="more">更多&#xe602;</div>
             </div>
         </div>
-        <div class="videos clearfix">
+        <div class="videos clearfix" id="rightvideos">
             <button class="fl lbtn iconfont">&#xe501;</button>
             <button class="fr rbtn iconfont">&#xe602;</button>
-            <ul>
-                <li><span><img src="./imgs/V/V1.jpg"></span></li>
-                <li><span><img src="./imgs/V/V2.jpg"></span></li>
-                <li><span><img src="./imgs/V/V3.jpg"></span></li>
-                <li><span><img src="./imgs/V/V4.jpg"></span></li>
+            <ul class="videos_ulid">
+                <li>
+                    <img src="./imgs/V/V1.jpg">
+                    <div>
+                        <span class="topspan fl">笑出猪叫！用梗的形式来讲解崩坏3！许愿彼岸双生！</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：艾尔十六</h4>
+                            <br>
+                            <h4>播放：19.8万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>笑出猪叫！用梗的方式来讲</h4>
+                </li>
+                <li>
+                    <img src="./imgs/V/V2.jpg">
+                    <div>
+                        <span class="topspan fl">【作画cover】封面画风重做一户</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：康康仔</h4>
+                            <br>
+                            <h4>播放：11.1万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>【作画cover】封面画风重做</h4>
+                </li>
+                <li>
+                    <img src="./imgs/V/V3.jpg">
+                    <div>
+                        <span class="topspan fl">【鬼灭之刃手书】六兆年零一物语</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：雪猫</h4>
+                            <br>
+                            <h4>播放：7.3万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>【鬼灭之刃手书】六兆年零</h4>
+                </li>
+                <li>
+                    <img src="./imgs/V/V4.jpg">
+                    <div>
+                        <span class="topspan fl">【老E】玩游戏最重要的是气势！</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：拉环儿</h4>
+                            <br>
+                            <h4>播放：26.0万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>【老E】玩游戏最重要的是</h4>
+                </li>
             </ul>
-            <ul>
-                <li><span><img src="./imgs/V/V5.jpg"></span></li>
-                <li><span><img src="./imgs/V/V6.jpg"></span></li>
-                <li><span><img src="./imgs/V/V7.jpg"></span></li>
-                <li><span><img src="./imgs/V/V8.jpg"></span></li>
+            <ul class="videos_ulid">
+                <li>
+                    <img src="./imgs/V/V5.jpg">
+                    <div>
+                        <span class="topspan fl">就是垃圾！【大声归来】开启国产单机游戏IP时代</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：fuckyourmother</h4>
+                            <br>
+                            <h4>播放：66.3万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>就是垃圾！【大圣归来】开</h4>
+                </li>
+                <li>
+                    <img src="./imgs/V/V6.jpg">
+                    <div>
+                        <span class="topspan fl">洛天依原创曲T.A.O</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：早睡健康长寿</h4>
+                            <br>
+                            <h4>播放：166万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>洛天依原创曲</h4>
+                </li>
+                <li>
+                    <img src="./imgs/V/V7.jpg">
+                    <div>
+                        <span class="topspan fl">三年后你是否仍孤身一人？</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：什么玩意</h4>
+                            <br>
+                            <h4>播放：10.7万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>三年后你是否仍孤身一人</h4>
+                </li>
+                <li>
+                    <img src="./imgs/V/V8.jpg">
+                    <div>
+                        <span class="topspan fl">上课别看，容易笑出猪叫（呵呵）</span>
+                        <span class="bottomspan fl">
+                            <h4>up主：anm</h4>
+                            <br>
+                            <h4>播放：33万</h4>
+                            <img src="./imgs/time.png" class="time fr">
+                        </span>
+                    </div>
+                    <h4>上课别看，容易笑出猪叫！</h4>
+                </li>
             </ul>
         </div>
 
@@ -164,27 +284,27 @@
                 </li>
                 <li>
                     <img src="./imgs/tg/3.jpg">
-                    <span class="inactivespan">
+                    <span class="tuigunag_inactivespan">
                         <img src="./imgs/time.png" class="time fr">
                         <h4>12:13</h4>
                     </span>
                 </li>
                 <li>
                     <img src="./imgs/tg/4.jpg">
-                    <span class="inactivespan">
+                    <span class="tuigunag_inactivespan">
                         <img src="./imgs/time.png" class="time fr">
                         <h4>01:13</h4>
                     </span>
                 </li>
                 <li>
                     <img src="./imgs/tg/5.jpg">
-                    <span class="inactivespan">
+                    <span class="tuigunag_inactivespan">
                         <img src="./imgs/time.png" class="time fr">
                         <h4>14:43</h4>
                     </span>
                 </li>
             </ul>
-            <ul class="ul2">
+            <ul class="ul2" id="h3ul2">
                 <li>
                     <h3>BW上海场~up主舞台之后竟然都是这样的？？</h3>
                 </li>
@@ -332,9 +452,9 @@
                             </span>
                             <span class="rightspan2"">
                                 <ul id="rightScrollspan">
-                                    <li class="activeli" id="0"></li>
-                                    <li class="inactiveli" id="1"></li>
-                                    <li class="inactiveli" id="2"></li>
+                                <li class="activeli" id="0"></li>
+                                <li class="inactiveli" id="1"></li>
+                                <li class="inactiveli" id="2"></li>
                                 </ul>
                             </span>
                         </div>
@@ -348,7 +468,7 @@
         </div>
     </div>
 
-    <div id="rightNav">
+    <div id="rightNav" class="staticrightNav">
         <ul class="rightNavUl">
             <a>
                 <li>直播</li>
@@ -417,6 +537,8 @@
                 <li class="last">&#xe606;</li>
             </a>
         </ul>
+        <img src="./imgs/appdownload.png" class="inactiverightdownload" id="download">
+        <div class="animation" style="background-position-x: 0" id="animationapp"></div>
     </div>
 
     <script src="./JS/main.js"></script>

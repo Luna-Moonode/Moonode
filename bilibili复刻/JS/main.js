@@ -8,3 +8,5 @@ function include(str) {
 include("videos");
 include("zhibo");
 include("tuiguang");
+include("rightNav");
+include("head");
