@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+    color: white;
+    animation: 3s emerge;
+}
+@keyframes emerge {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+ul {
+    margin-left: 100px;
+}
+li {
+    line-height: 3em;
+    font-size: 15px;
+}
+span {
+    font-size: 20px;
+    font-weight: bold;
+    color: bisque;
+}
+button {
+    background-color: azure;
+    color: black;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    border-radius: 30%;
+    font-size: 25px;
+    cursor: pointer;
+    animation: 1s leaveButton;
+}
+button:hover {
+    background-color: rgba(94, 81, 7, 0.575);
+    border-radius: 50%;
+    color: bisque;
+    animation: 1s enterButton;
+}
+@keyframes enterButton {
+    from {
+        background-color: azure;
+        border-radius: 30%;
+        color: black;
+    }
+
+    to {
+        background-color: rgba(94, 81, 7, 0.575);
+        border-radius: 50%;
+        color: bisque;
+    }
+}
+
+@keyframes leaveButton {
+    from {
+        background-color: rgba(94, 81, 7, 0.575);
+        border-radius: 50%;
+        color: bisque;
+    }
+
+    to {
+        background-color: azure;
+        border-radius: 30%;
+        color: black;
+    }
+}

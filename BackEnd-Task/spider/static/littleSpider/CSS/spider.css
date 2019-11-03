@@ -1,0 +1,205 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    animation: 10s emerge;
+}
+
+@keyframes emerge {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#Head {
+    position: relative;
+}
+
+#Head .h2 {
+    font-size: 45px;
+    text-align: center;
+    animation: 5s emerge;
+}
+
+#Head .h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    animation: 10s emerge;
+}
+#refreshButton {
+    width: 100px;
+    height: 50px;
+    background-color: beige;
+    color: black;
+    border-radius: 30%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    position: absolute;
+    left: 700px;
+    border: 1px solid black;
+    cursor: pointer;
+    animation: 1s leaveRefreshButton;
+    display: block;
+}
+
+#refreshButton:hover {
+    background-color: lightslategray;
+    opacity: 0.9;
+    color: white;
+    border-radius: 50%;
+    animation: 1s enterRefreshButton;
+}
+#Head .pleaseWaith3 {
+    display: none;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    left: 38%;
+    font-weight: 200;
+    animation: 2s emrge;
+    margin-top: 60px;
+}
+@keyframes leaveRefreshButton {
+    from {
+        border-radius: 50%;
+        background-color: lightslategray;
+        color: white;
+    }
+
+    to {
+        background-color: beige;
+        border-radius: 30%;
+        color: black;
+    }
+}
+
+@keyframes enterRefreshButton {
+    from {
+        background-color: beige;
+        border-radius: 30%;
+        color: black;
+    }
+
+    to {
+        border-radius: 50%;
+        background-color: lightslategray;
+        color: white;
+    }
+}
+#Head .selectdiv {
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 30px;
+}
+#selectform input {
+    float: left;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: 45%;
+    margin-right: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 40%;
+}
+#selectform input:hover {
+    background-color: blanchedalmond;
+}
+#selectform input.go {
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    background-color: cornsilk;
+    border-radius: 16px;
+    cursor: pointer;
+    animation: 1s goback;
+}
+#selectform input.go:hover {
+    margin-left: -18px;
+    animation: 1s goleft;
+}
+@keyframes goleft {
+    from {margin-left: 0;}
+    to {margin-left: -18px;}
+}
+@keyframes goback {
+    from {margin-left: -18px;}
+    to {margin-left: 0;}
+}
+.searchdiv {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    width: 400px;
+    height: 30px;
+}
+.searchdiv input {
+    font-size: 23px;
+    border: none;
+    background-color: beige;
+    font-weight: lighter;
+}
+.searchdiv .searchinput{
+    width: 250px;
+    height: 30px;
+    border-radius: 12px 0 0 12px;
+}
+.searchdiv .searchinput:hover {
+    background-color: rgb(255, 238, 217);
+}
+.searchdiv .searchbutton {
+    width: 85px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+    color: grey;
+    background-color: bisque;
+    position: relative;
+}
+.searchdiv .searchbutton:hover {
+    background-color: burlywood;
+    color: gold;
+}
+/*  */
+#listdiv {
+    position: relative;
+    /* top: 200px; */
+    width: 100%;
+    height: 700px;
+    animation: 5s emerge;
+}
+
+#listdiv ul {
+    width: 300px;
+    height: 700px;
+    margin-right: 30px;
+    float: left;
+}
+
+#listdiv li {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 2em;
+    color: bisque;
+}
+
+#listdiv .title {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+#listdiv ul span {
+    font-weight: 900;
+    color: cornflowerblue;
+}

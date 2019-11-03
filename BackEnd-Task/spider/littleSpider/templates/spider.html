@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Little Spider</title>
+    <link rel="stylesheet" href="/static/CSS/reset.css">
+    <link rel="stylesheet" href="/static/CSS/spider.css">
+</head>
+<body>
+    <div id="Head" class="layer clearfix">
+        <h2 class="h2">Hello, little one!</h2>
+        <h3 class="h3">I got some pages for you to choose~</h3>
+        <h3 style="color: blanchedalmond;" class="h3">Click here to refresh↓</h3>
+        <form action="/spider/" method="POST">
+            {% csrf_token %}
+            <input type="submit" name="refreshButton" id="refreshButton" value="Refresh">
+        </form>
+        <h2 style="{{ pleaseWaitDisplay }};" id="wait" class="pleaseWaith3">Refreshing, please wait...</h2>
+        <div class="searchdiv">
+            <form action="/spider/" method="POST" id="searchform">
+                {% csrf_token %}
+                <input type="text" value="{{ keywords }}" id="searchinput" class="searchinput" name="searchinput"><input type="submit" value="search" class="searchbutton" name="searchButton">
+            </form>
+        </div>
+        <div class="selectdiv">
+            <form action="/spider/" method="POST" id="selectform" class="clearfix">
+            {% csrf_token %}
+                <input type="text" value="" name="page">
+                <input type="text" value="" name="number">
+                <input type="submit" value="←input&go!" class="go" name="go">
+            </form>
+        </div>
+    </div>
+
+    <div id="listdiv">
+        <ul>
+            <li class="title">Page1</li>
+            {% for data in datals.0 %}
+                <li><span>{{ data.count }}. </span>{{ data.name }}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <li class="title">Page2</li>
+            {% for data in datals.1 %}
+            <li><span>{{ data.count }}. </span>{{ data.name }}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <li class="title">Page3</li>
+            {% for data in datals.2 %}
+            <li><span>{{ data.count }}. </span>{{ data.name }}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <li class="title">Page4</li>
+            {% for data in datals.3 %}
+            <li><span>{{ data.count }}. </span>{{ data.name }}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <li class="title">Page5</li>
+            {% for data in datals.4 %}
+            <li><span>{{ data.count }}. </span>{{ data.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+
+
+
+
+
+    <script src="/static/JS/spider.js"></script>
+</body>
+</html>

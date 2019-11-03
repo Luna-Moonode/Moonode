@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+}
+div {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+}
+h2 {
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 70px;
+    text-align: center;
+    cursor: default;
+}
+h2:hover {
+    color: bisque;
+}
+button {
+    position: relative;
+    left: 350px;
+    vertical-align: middle;
+    width: 300px;
+    height: 100px;
+    background-color: azure;
+    border-radius: 30%;
+    margin: 0 auto;
+    font-size: 35px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    animation: 1s leaveButton;
+    cursor: pointer;
+}
+button:hover {
+    color: bisque;
+    background-color: rgba(94, 81, 7, 0.575);
+    border: 0.1px;
+    border-radius: 50%;
+    animation: 1s enterButton;
+}
+@keyframes enterButton {
+    from {
+        background-color: azure;border-radius: 30%;
+        color: black;
+        border-radius: 30%;
+    }
+
+    to {
+        background-color: rgba(94, 81, 7, 0.575);
+        border-radius: 50%;
+        color: bisque;
+    }
+}
+@keyframes leaveButton {
+    from {
+        background-color: rgba(94, 81, 7, 0.575);
+        border-radius: 50%;
+        color: bisque;
+    }
+
+    to {
+        background-color: azure;
+        border-radius: 30%;
+        color: black;
+    }
+}

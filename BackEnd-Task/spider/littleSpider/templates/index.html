@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'CSS/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}">
+</head>
+<body>
+    <div class="clearfix">
+        <h2>Welcome to spider web!</h2>
+        <h2>Click this↓</h2>
+        <button onclick="location.href='/spider/'">Hello World!</button>
+    </div>
+</body>
+</html>
