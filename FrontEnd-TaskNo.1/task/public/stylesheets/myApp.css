@@ -1,0 +1,27 @@
+.get{
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    text-align: center;
+    color: white;
+    background-color: chocolate;
+    opacity: 0.8;
+    border-radius: 12px;
+    border-color: black;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    font-family: Courier, serif;
+}
+.back{
+    background-color: black;
+}
+.input{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    font-family: Courier, serif;
+    font-size: 20px;
+    background-color: azure;
+}

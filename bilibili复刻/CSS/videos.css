@@ -1,0 +1,242 @@
+#videos {
+    position: relative;
+    top: 200px;
+    height: 220px;
+    width: 1160px;
+}
+#videos .scrollimg {
+    float: left;
+    width: 440px;
+    height: 220px;
+    background-color: whitesmoke;
+}
+/* 轮播图 */
+#videos .scroll {
+    margin-left: 0;
+    width: 440px;
+    height: 220px;
+    overflow: hidden;
+}
+#videos .scroll ul {
+    float: left;
+    margin-left: 0;
+    width: 2640px;
+    height: 220px;
+    position: relative;
+    left: -40px;
+}
+#videos .scroll li {
+    width: 440px;
+    height: 220px;
+    float: left;
+    margin: 0;
+}
+#videos .scroll img {
+    width: 440px;
+    height: 220px;
+    border-radius: 8px;
+}
+/* 小圆点 */
+#videos .scrollbottom {
+    position: relative;
+    top: -35px;
+    width: 440px;
+    height: 35px;
+}
+#videos .circles {
+    float: right;
+    width: 120px;
+    height: 16px
+}
+#videos .circles ul {
+    float: left;
+    padding: 0;
+}
+#videos .circles span {
+    position: relative;
+    top: 5px;
+    float: left;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+}
+#videos .circles .circlespan0 {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+#videos .circles .circlespan1 {
+    width: 11px;
+    height: 11px;
+    background-color: deepskyblue;
+    border: 1px solid darkgrey;
+}
+/* 字 */
+#videos .scrollbottom .text {
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: 300;
+    width: 220px;
+    height: 16px;
+    color: white;
+}
+#videos .scrollbottom .text span {
+    width: 220px;
+    height: 16px;
+}
+#videos .scrollbottom .text .inactive {
+    display: none;
+}
+#videos .scrollbottom .text .active {
+    display: block;
+}
+/* more */
+@keyframes emerge {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#videos .scrollimg .more {
+    width: 50px;
+    height: 24px;
+    position: relative;
+    top: -40px;
+    float: right;
+    background-color: rgba(53, 53, 53, 0.609);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    line-height: 26px;
+    display: none;
+}
+#videos .scrollimg .moreactive {
+    width: 50px;
+    height: 24px;
+    position: relative;
+    top: -40px;
+    float: right;
+    background-color: rgba(53, 53, 53, 0.609);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    line-height: 26px;
+    animation: 0.6s emerge;
+}
+/*  */
+
+
+#videos .videos {
+    float: right;
+    height: 220px;
+    width: 720px;
+}
+#videos ul {
+    float: left;
+}
+#videos li {
+    float: left;
+    width: 160px;
+    height: 100px;
+    margin: 0 0px 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.9);
+}
+#videos img {
+    border-radius: 12px;
+    cursor: pointer;
+}
+#videos ul li h4 {
+    font-size: 11px;
+    font-weight: 100;
+    position: relative;
+    top: -20px;
+    color: white;
+}
+#videos button {
+    width: 35px;
+    height: 62px;
+    opacity: 0.35;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+    display: none;
+}
+#videos .lbtn {
+    border-radius: 0 6px 6px 0;
+    left: 42.1%;
+}
+#videos .rbtn{
+    border-radius: 6px 0 0 6px;
+    left: 97%;
+}
+@keyframes activebutton {
+    from {opacity: 0;}
+    to {opacity: 0.35;}
+}
+#videos .activelbtn {
+    border-radius: 0 6px 6px 0;
+    left: 42.1%;
+    display: block;
+    animation: 0.6s activebutton;
+}
+#videos .activerbtn {
+    border-radius: 6px 0 0 6px;
+    left: 97%;
+    display: block;
+    animation: 0.3s activebutton;
+}
+
+#videos .videos div {
+    position: relative;
+    float: left;
+    top: -100px;
+    width: 160px;
+    height: 100px;
+    background-color: rgba(1, 1, 1, 0.7);
+    border-radius: 12px;
+    display: none;
+}
+@keyframes activediv {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#videos .videos .activediv {
+    display: block;
+    animation: 0.5s activediv;
+    cursor: pointer;
+}
+#videos .videos .topspan {
+    width: 160px;
+    height: 50px;
+    color: white;
+}
+
+#videos .videos .bottomspan {
+    width: 160px;
+    height: 50px;
+}
+#videos .videos .bottomspan h4 {
+    font-size: 8px;
+    font-weight: 100;
+    color: darkgrey;
+    float: left;
+    position: relative;
+    top: 8px;
+    margin-left: 2px;
+}
+@keyframes inactiveouterh4 {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+#videos .videos .inactiveouterh4 {
+    display: none;
+    animation: 0.3s inactiveouterh4;
+}
+#videos .videos .time {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    position: relative;
+    top: 8px;
+}

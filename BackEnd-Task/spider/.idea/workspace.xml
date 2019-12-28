@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4494b4d-2aa8-49e3-a107-88978961d0da" name="Default Changelist" comment="" />
+    <list default="true" id="a4494b4d-2aa8-49e3-a107-88978961d0da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/littleSpider/spiderEngine/spiderFunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/littleSpider/spiderEngine/spiderFunc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/littleSpider/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/static/littleSpider/db.sqlite3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/littleSpider/CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -129,6 +133,15 @@
       <workItem from="1572666467285" duration="538000" />
       <workItem from="1572667035827" duration="24000" />
       <workItem from="1572667069873" duration="32095000" />
+      <workItem from="1572754433961" duration="321000" />
+      <workItem from="1572791816991" duration="311000" />
+      <workItem from="1573128429647" duration="111000" />
+      <workItem from="1573137927892" duration="39000" />
+      <workItem from="1573214878640" duration="134000" />
+      <workItem from="1573572184669" duration="389000" />
+      <workItem from="1573573375059" duration="1113000" />
+      <workItem from="1574743257466" duration="168000" />
+      <workItem from="1574743966373" duration="80000" />
     </task>
     <servers />
   </component>

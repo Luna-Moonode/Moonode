@@ -1,0 +1,1 @@
+button = document.getElementById('get');
